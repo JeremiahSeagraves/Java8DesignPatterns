@@ -6,11 +6,11 @@ package com.jeremiah.designpatterns.creational.builder;
  */
 public class BuilderLunchOrderDemo {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         LunchOrderBuilder builder = new LunchOrderBuilder();
 
-        builder.bread("Wheat").dressing("Mayo").meat("Turkey");
+        builder.bread("Wheat").dressing("Mayo").meat("Turkey").condiments("Salt and pepper");
 
         LunchOrder lunchOrder = builder.build();
 
