@@ -1,4 +1,4 @@
-package com.jeremiah.designpatterns.creational.builder;
+package com.jeremiahseagraves.designpatterns.creational.builder;
 
 /**
  * @author jeremiah.seagraves

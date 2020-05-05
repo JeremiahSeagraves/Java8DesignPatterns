@@ -1,4 +1,4 @@
-package com.jeremiah.designpatterns.creational.builder.telescope;
+package com.jeremiahseagraves.designpatterns.creational.builder.telescope;
 
 /**
  * This way, we don't have setters and we force field to be set through the use of overloaded constructors, but the problem is that we have various

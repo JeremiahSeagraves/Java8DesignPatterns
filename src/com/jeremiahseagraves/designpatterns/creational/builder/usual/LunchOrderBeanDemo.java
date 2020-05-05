@@ -1,4 +1,4 @@
-package com.jeremiah.designpatterns.creational.builder.usual;
+package com.jeremiahseagraves.designpatterns.creational.builder.usual;
 
 /**
  * This is the usual way, having getters and setters

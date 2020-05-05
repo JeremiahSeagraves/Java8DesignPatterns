@@ -1,4 +1,4 @@
-package com.jeremiah.designpatterns.creational.singleton;
+package com.jeremiahseagraves.designpatterns.creational.singleton;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

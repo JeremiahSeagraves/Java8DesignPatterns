@@ -1,4 +1,4 @@
-package com.jeremiah.designpatterns.creational.builder;
+package com.jeremiahseagraves.designpatterns.creational.builder;
 
 /**
  * Here we are applying the builder pattern, having no setters and having one method per attribute, returning the instance

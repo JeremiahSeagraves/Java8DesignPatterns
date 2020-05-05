@@ -1,4 +1,4 @@
-package com.jeremiah.designpatterns.creational.builder.telescope;
+package com.jeremiahseagraves.designpatterns.creational.builder.telescope;
 
 public class LunchOrderTele {
 

@@ -1,4 +1,4 @@
-package com.jeremiah.designpatterns.creational.builder.usual;
+package com.jeremiahseagraves.designpatterns.creational.builder.usual;
 
 public class LunchOrderBean {
 
