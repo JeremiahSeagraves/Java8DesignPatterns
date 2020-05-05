@@ -3,8 +3,8 @@ package com.jeremiahseagraves.designpatterns.creational.prototype;
 public class PrototypeDemo {
 
 	public static void main(String[] args) {
-		Registry registry = new Registry();
-		Movie movie = (Movie) registry.createItem("Movie");//this will give us an instance of movie by cloning the default inside the registry
+		ItemRegistry itemRegistry = new ItemRegistry();
+		Movie movie = (Movie) itemRegistry.createItem("Movie");//this will give us an instance of movie by cloning the default inside the itemRegistry
 		movie.setTitle("Creational Patterns in Java");
 		
 		System.out.println(movie);
@@ -12,7 +12,7 @@ public class PrototypeDemo {
 		System.out.println(movie.getTitle());
 		System.out.println(movie.getUrl());
 		
-		Movie anotherMovie = (Movie) registry.createItem("Movie");//another unique instance by using the same clone inside the registry
+		Movie anotherMovie = (Movie) itemRegistry.createItem("Movie");//another unique instance by using the same clone inside the itemRegistry
 		anotherMovie.setTitle("Gang of Four");
 		
 		System.out.println(anotherMovie);

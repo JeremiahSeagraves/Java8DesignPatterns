@@ -6,11 +6,11 @@ import java.util.Map;
 /**
  * This registry is the most important part of the prototype patterns, as it holds the default instances of every class that we want to prototype
  */
-public class Registry {
+public class ItemRegistry {
 
     private Map<String, Item> items = new HashMap<String, Item>();
 
-    public Registry() {
+    public ItemRegistry() {
     	//this is the functionality that will load the default object instances
         loadItems();
     }
