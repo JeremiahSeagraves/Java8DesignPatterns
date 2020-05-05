@@ -10,7 +10,7 @@ public class BuilderLunchOrderDemo {
 
         LunchOrderBuilder builder = new LunchOrderBuilder();
 
-        builder.bread("Wheat").dressing("Mayo").meat("Turkey");
+        builder.bread("Wheat").dressing("Mayo").meat("Turkey").condiments("Salt and pepper");
 
         LunchOrder lunchOrder = builder.build();
 
