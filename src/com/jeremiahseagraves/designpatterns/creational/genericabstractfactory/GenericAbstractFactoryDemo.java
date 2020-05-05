@@ -11,7 +11,7 @@ public class GenericAbstractFactoryDemo {
 
         System.out.println(card.getClass());
 
-        GenericAbstractCreditCardFactory abstractFactory2 = GenericAbstractCreditCardFactory.getCreditCardFactory(VisaFactory.class, VisaBlackCreditCard.class);
+        abstractFactory = GenericAbstractCreditCardFactory.getCreditCardFactory(VisaFactory.class, VisaBlackCreditCard.class);
         creditCardFactory = abstractFactory.createCreditCardFactory();
 
         CreditCard card2 = creditCardFactory.getCreditCard();
