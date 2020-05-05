@@ -1,4 +1,4 @@
-package com.jeremiahseagraves.designpatterns.creational.abstractfactory.generic;
+package com.jeremiahseagraves.designpatterns.creational.genericabstractfactory;
 
 public class VisaFactory implements CreditCardFactory {
 
