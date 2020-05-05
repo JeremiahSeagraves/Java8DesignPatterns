@@ -4,7 +4,7 @@ public class GenericAbstractFactoryDemo {
 
     public static void main(String[] args) throws IllegalAccessException, InstantiationException {
 
-        CreditCardFactory creditCardFactory= GenericAbstractCreditCardFactory.getCreditCardFactory(AmexFactory.class, AmexGoldCreditCard.class).createCreditCardFactory();
+        CreditCardFactory creditCardFactory = GenericAbstractCreditCardFactory.getCreditCardFactory(AmexFactory.class, AmexGoldCreditCard.class).createCreditCardFactory();
         CreditCard card = creditCardFactory.getCreditCard();
 
         System.out.println(card.getClass());
