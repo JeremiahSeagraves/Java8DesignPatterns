@@ -4,6 +4,7 @@ import com.jeremiahseagraves.designpatterns.structural.bridge.advanced.domain.De
 
 import java.util.List;
 
+@FunctionalInterface
 public interface Formattable {
     String format(String header, List<Detail> details);
 }

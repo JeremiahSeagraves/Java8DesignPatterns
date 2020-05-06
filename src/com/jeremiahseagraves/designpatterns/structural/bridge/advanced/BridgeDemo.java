@@ -1,9 +1,9 @@
 package com.jeremiahseagraves.designpatterns.structural.bridge.advanced;
 
+import com.jeremiahseagraves.designpatterns.structural.bridge.advanced.domain.Detail;
 import com.jeremiahseagraves.designpatterns.structural.bridge.advanced.domain.Movie;
 import com.jeremiahseagraves.designpatterns.structural.bridge.advanced.formattable.Formattable;
 import com.jeremiahseagraves.designpatterns.structural.bridge.advanced.formattable.HtmlFormattableImpl;
-import com.jeremiahseagraves.designpatterns.structural.bridge.advanced.formattable.SimpleStringFormattableImpl;
 import com.jeremiahseagraves.designpatterns.structural.bridge.advanced.printable.MoviePrintableImpl;
 import com.jeremiahseagraves.designpatterns.structural.bridge.advanced.printable.Printable;
 
@@ -19,10 +19,25 @@ public class BridgeDemo {
         movie.setRuntime("2:15");
         movie.setYear("2014");
 
-        Formattable printFormattable = new SimpleStringFormattableImpl();
+        /*Formattable printFormattable = new SimpleStringFormattableImpl();*/
         Printable moviePrinter = new MoviePrintableImpl(movie);
 
-        String printedMaterial = moviePrinter.print(printFormattable);
+        /*String printedMaterial = moviePrinter.print(printFormattable);*/
+        String printedMaterial = moviePrinter.print((header, details) -> {
+            //this is the same as the SimpleStringFormattableImpl
+            StringBuilder builder = new StringBuilder();
+            builder.append(header);
+            builder.append("\n");
+
+            for (Detail detail : details) {
+                builder.append(detail.getLabel());
+                builder.append(":");
+                builder.append(detail.getValue());
+                builder.append("\n");
+            }
+
+            return builder.toString();
+        });
 
         System.out.println(printedMaterial);
 
