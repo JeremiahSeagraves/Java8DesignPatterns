@@ -19,7 +19,7 @@ public class ItemRegistry {
         Item item = null;
 
         try {
-            item = (items.get(type)).clone();
+            item = items.get(type).clone();
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
